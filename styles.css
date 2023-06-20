@@ -1,0 +1,90 @@
+`cd/* FONTS */
+
+body {
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  color: #333;
+  background-color: blanchedalmond;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 40px;
+  color: #047;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 22px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+/* DISPLAY */
+
+#info .left {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+#info .right {
+  display: inline-block;
+  width: 49%;
+}
+
+section .left {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+}
+
+section .right {
+  display: inline-block;
+  width: 74%;
+}
+
+#info h1 {
+  margin: 0;
+}
+
+#info h2 {
+  margin: 0;
+}
+
+#info .right {
+  vertical-align: bottom;
+  text-align: right;
+}
+
+.work-title-left {
+  display: inline-block;
+  width: 74%;
+}
+.work-title-right {
+  display: inline-block;
+  width: 24%;
+}
