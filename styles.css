@@ -2,6 +2,16 @@
                                                  SITE WIDE
 /****************************************************************************************/
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main {
+  margin: 20px;
+}
+
 /* FONTS */
 
 body {
@@ -17,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, 'Times New Roman', Times, serif, serif;
+  font-family: Georgia, "Times New Roman", Times, serif, serif;
 }
 
 h1 {
@@ -45,6 +55,49 @@ h4 {
 h5 {
   font-size: 16px;
   margin: 0px;
+}
+
+/* NAVBAR */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background-color: #3474e6;
+  color: white;
+  height: 60px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 /***************************************************************************************
@@ -98,6 +151,47 @@ section .right {
 }
 
 /***************************************************************************************
+                                                 PROJECTS
+/****************************************************************************************/
+
+.projects-wrapper {
+  margin: 20px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-column: 150px auto auto;
+  grid-template-row: auto 1fr 1fr;
+  gap: 10px;
+}
+
+#title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+#menu {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+#image {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+#article1 {
+  grid-column: 2/3;
+  grid-row: 3/3;
+}
+
+#article2 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+/***************************************************************************************
                                                  CONTACT
 /****************************************************************************************/
 
@@ -105,20 +199,25 @@ section .right {
   margin: 20px 0;
 }
 
+.contact-wrapper {
+  margin: 20px;
+}
+
 .form-question label {
   display: block;
   margin-bottom: 5px;
 }
 
-.form-question input, .form-question textarea  {
+.form-question input,
+.form-question textarea {
   width: 80vw;
   border: 1px solid #444;
-  border-radius:  5px;
+  border-radius: 5px;
   padding: 5px 10px;
 }
 
 .required label::after {
-  content:  "*";
+  content: "*";
   color: red;
 }
 
@@ -137,5 +236,3 @@ section .right {
   box-shadow: none;
   border: 1px solid #256ac4;
 }
-
-

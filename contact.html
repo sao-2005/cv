@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <h1>Contact</h1>
-    <p>Feel free to reach out and contact me! I'd love to here from you . </p>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">My Logo</div>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./cv.html">CV</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <form action=" https://formsubmit.co/a7e50bff4a6a56c2dc07a87518534727" method="POST">
+    <div class="contact-wrapper">
+      <h1>Contact</h1>
+      <p>Feel free to reach out and contact me! I'd love to here from you .</p>
+
+      <form
+        action=" https://formsubmit.co/a7e50bff4a6a56c2dc07a87518534727"
+        method="POST"
+      >
         <div class="form-question required">
-           <label for="name  " >Name:</label>
-           <input  type="text" id="name"  name="'name" required>
+          <label for="name  ">Name:</label>
+          <input type="text" id="name" name="'name" required />
         </div>
 
-        <div class="form-question required" >
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
+        <div class="form-question required">
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required />
         </div>
 
         <div class="form-question">
-            <label for="phone">Phone:</label>
-            <input id="'phone" type="text" name="phone">
+          <label for="phone">Phone:</label>
+          <input id="'phone" type="text" name="phone" />
         </div>
 
-        <div class="form-question  required" >
-             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="form-question required">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/CV/contact.html">
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/CV/contact.html"
+        />
 
-        <input type="hidden" name="_captcha" value="false" value="http://127.0.0.1:5500/CV/contact.html">
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+          value="http://127.0.0.1:5500/CV/contact.html"
+        />
         <button type="submit" id="submit">Submit</button>
-    </form>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
