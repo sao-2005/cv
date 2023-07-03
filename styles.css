@@ -101,31 +101,28 @@ h5 {
 }
 
 /***************************************************************************************
-                                                 SITE WIDE
+                                                 CV
 /****************************************************************************************/
 
-/* DISPLAY */
-
-#info .left {
-  display: inline-block;
-  width: 49%;
-  vertical-align: top;
+.paper-background {
+  background-color: white;
+  max-width: 1000px;
+  margin: 20px;
+  padding: 20px;
 }
 
-#info .right {
-  display: inline-block;
-  width: 49%;
+#info,
+main {
+  max-width: 1000px;
+  padding: 0 20px;
 }
 
-section .left {
-  display: inline-block;
-  width: 24%;
-  vertical-align: top;
+#info {
+  margin: 30px auto;
 }
 
-section .right {
-  display: inline-block;
-  width: 74%;
+main {
+  margin: 30px auto;
 }
 
 #info h1 {
@@ -136,18 +133,55 @@ section .right {
   margin: 0;
 }
 
-#info .right {
-  vertical-align: bottom;
-  text-align: right;
+/* DISPLAY */
+
+@media screen and (max-width: 799px) {
+  #info {
+    display: block;
+  }
+
+  #info .left {
+    text-align: center;
+  }
+
+  #info .right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  section .right {
+    margin: 20px;
+  }
+
+  section h3 {
+    font-weight: bold;
+  }
 }
 
-.work-title-left {
-  display: inline-block;
-  width: 74%;
+@media screen and (min-width: 800px) {
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #info .right {
+    align-self: end;
+    text-align: right;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
 }
-.work-title-right {
-  display: inline-block;
-  width: 24%;
+
+.work-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.work-item p {
+  grid-area: 2 / 1 / 3 / 3;
 }
 
 /***************************************************************************************
@@ -160,8 +194,8 @@ section .right {
 
 #grid-container {
   display: grid;
-  grid-template-column: 150px auto auto;
-  grid-template-row: auto 1fr 1fr;
+  grid-template-columns: 150px auto auto;
+  grid-template-rows: auto 1fr 1fr;
   gap: 10px;
 }
 
