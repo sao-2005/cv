@@ -4,18 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">My Logo</div>
-        <ul class="nav">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./cv.html">CV</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-warning m-2">
+      <div class="container-fluid">
+        <a class="navbar-brand"><i><strong><h1>Stephanie</h1></strong></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cv.html">CV</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
       </div>
     </nav>
 
@@ -27,24 +57,67 @@
         action=" https://formsubmit.co/a7e50bff4a6a56c2dc07a87518534727"
         method="POST"
       >
-        <div class="form-question required">
-          <label for="name  ">Name:</label>
-          <input type="text" id="name" name="'name" required />
+        <div class="row mx-3 my-4">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+              required
+            />
+          </div>
         </div>
 
-        <div class="form-question required">
-          <label for="email">Email: </label>
-          <input type="email" id="email" name="email" required />
+        <div class="row mx-3 my-4">
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="float"
+              placeholder="name@example.com"
+              required
+            />
+            <label for="float">Email:</label>
+          </div>
         </div>
 
-        <div class="form-question">
-          <label for="phone">Phone:</label>
-          <input id="'phone" type="text" name="phone" />
+        <div class="row mx-3 my-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              name="phone"
+              id="float"
+              placeholder="Phone"
+            />
+            <label for="float">Phone:</label>
+          </div>
         </div>
 
-        <div class="form-question required">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="row mx-3 my-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="float"
+              placeholder="additional information"
+              name="message"
+              rows="5"
+              required
+            />
+            <label for="float">Message:</label>
+          </div>
         </div>
 
         <input
@@ -62,5 +135,10 @@
         <button type="submit" id="submit">Submit</button>
       </form>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
